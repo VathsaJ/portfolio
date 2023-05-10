@@ -12,60 +12,62 @@ import Fin from '../../public/Fin.jpg'
 import { useState } from 'react'
 
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
 
   return (
     <div className={darkMode ? "dark" : ""}>
 
-      <main className='px-10 bg-white dark:bg-gray-900'>
+      <main className='px-10 bg-white dark:bg-gray-900 dark:text-slate-300'>
 
         <section className='min-h-screen '>
 
-          <nav className='p-6 mb-12 flex justify-between shadow-lg rounded-md'>
-            <h1 className='text-2xl font-bold dark:text-white'>Joisa</h1>
+          <nav className='p-6 mb-12 flex justify-between shadow-xl rounded-xl'>
+            <h1 className='text-2xl font-bold'>VATHSA</h1>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill className='cursor-pointer text-2xl hover:scale-110 duration-300' onClick={() => setDarkMode(!darkMode)}/></li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white rounded-md ml-8' href=''>Resume</a></li>
             </ul>
           </nav>
 
-          <div className='text-center p-20 '>
-            <h2 className='text-4xl py-2 text-teal-600 font-medium md:text-7xl mt-10'>Shrivathsa Joisa</h2>
-            <h3 className='text-2xl py-2 font-medium md:text-3xl dark:text-slate-300'>Software Developer</h3>
-            <p className='text-md py-5 leading-8 font-semibold text-cyan-800 max-w-7xl'>
+          <div className='text-center py-5'>
+
+          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mx-auto overflow-hidden'>
+            <Image src={deved} alt='' layout='fill' objectFit='cover' className='hover:scale-110 duration-300' />
+          </div>
+            <h2 className='text-4xl py-2 text-teal-600 font-medium md:text-7xl mt-10 hover:scale-110 duration-300'>Shrivathsa Joisa</h2>
+            <h3 className='text-2xl py-2 font-medium md:text-3xl'>Software Developer</h3>
+            <p className='text-md py-5 leading-8 font-semibold max-w-4xl mx-auto'>
               Hii.. Im Vathsa ..
               I'm a software developer based in Bangalore, India, specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
             </p>
-            <p className='text-md font-semibold text-cyan-800'>Please scroll down below to know more..</p>
+            <p className='text-md font-semibold text-cyan-800'>Please scroll down to know more..</p>
           </div>
 
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-15 mx-auto overflow-hidden'>
-            <Image src={deved} alt='' layout='fill' objectFit='cover' className='hover:scale-110 duration-300' />
-          </div>
 
-          <div className='flex justify-center gap-16 text-5xl py-3 text-greay-500 mt-12 dark:text-slate-300'>
-            <a href='https://www.instagram.com/shrivathsa_joisa/'><AiFillInstagram className='hover:scale-105 duration-300 mt-5'/></a>
-            <a href='https://www.facebook.com/shrivathsa.joisa'><AiFillFacebook className='hover:scale-105 duration-300  mt-5' /></a>
-            <a href='https://www.linkedin.com/in/vathsajoisa/'><AiFillLinkedin className='hover:scale-105 duration-300 mt-5'/></a>
-            <a href='https://github.com/VathsaJ'><FaGithub className='hover:scale-105 duration-300 mt-5'/></a>
+          <div className='flex justify-center gap-16 text-5xl py-3 text-greay-500 mt-5 max-w-md shadow-lg mx-auto rounded-3xl'>
+            <a href='https://www.instagram.com/shrivathsa_joisa/'><AiFillInstagram className='hover:scale-110 duration-300 mt-5'/></a>
+            <a href='https://www.facebook.com/shrivathsa.joisa'><AiFillFacebook className='hover:scale-110 duration-300  mt-5' /></a>
+            <a href='https://www.linkedin.com/in/vathsajoisa/'><AiFillLinkedin className='hover:scale-110 duration-300 mt-5'/></a>
+            <a href='https://github.com/VathsaJ'><FaGithub className='hover:scale-110 duration-300 mt-5'/></a>
           </div>
-
 
         </section>
 
 
-        <section className='mt-20 text-center'>
+        <section className='py-10 text-center'>
 
           <div className=''>
+
             <h3 className='text-4xl py-1 font-medium text-teal-600'>Services Offered</h3 >
-            <p className='text-md py-2 text-gray-800 font-semibold dark:text-slate-300'>
+            <p className='text-md py-2 font-semibold'>
               Below are some of the services I offer. I'm also open to consulting and freelance work.
               Scroll down to learn more about me and my work.
             </p>
           </div>
 
-          <div className='lg:flex dark:text-slate-300'>
+          <div className='lg:flex'>
+            
             <div className='text-center p-8 mx-auto shadow-lg mt-10 mb-10 rounded-lg hover:scale-105 duration-300 border' >
               <Image src={design} alt='' className='mx-auto' />
               <h3 className='text-2xl font-bold pt-2 pb-2 '> Web Development</h3>
@@ -101,7 +103,7 @@ export default function Home() {
         </section>
 
 
-        <section className='mt-10 text-center dark:text-slate-300'>
+        <section className='text-center'>
 
           <div>
             <h3 className='text-3xl py-1 font-medium text-teal-600'> Portfolio</h3>
@@ -127,9 +129,8 @@ export default function Home() {
               <h1 className='font-bold text-xl p-2'>Finance System</h1>
               <p className='font-medium pb-5'>Finance Software is a web applications that allows financial organizations to collect, manage, persist the customers financial data. </p>
               <h4 className='py-4 text-teal-400 font-medium text-xl'>Tools used</h4>
-              <p className='text-greay-800 py-1 font-medium'>ReactJS</p>
-              <p className='text-greay-800 py-1 font-medium'>NodeJS</p>
-              <p className='text-greay-800 py-1 font-medium'>MongoDB</p>
+              <p className='text-greay-800 py-1 font-medium'>ReactJS & NodeJS</p>
+              <p className='text-greay-800 py-1 font-medium'>ExpressJS & MongoDB</p>
             </div>
 
             <div className='text-center mx-auto max-w-sm rounded-xl shadow-xl mb-10 p-2'>
