@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
 
-          <div className='flex justify-center gap-16 text-5xl py-3 text-greay-500 mt-5 max-w-md shadow-lg mx-auto rounded-3xl'>
+          <div className='flex justify-center gap-16 text-5xl py-3 text-greay-500 mt-5 mx-auto'>
             <a href='https://www.instagram.com/shrivathsa_joisa/'><AiFillInstagram className='hover:scale-110 duration-300 mt-5'/></a>
             <a href='https://www.facebook.com/shrivathsa.joisa'><AiFillFacebook className='hover:scale-110 duration-300  mt-5' /></a>
             <a href='https://www.linkedin.com/in/vathsajoisa/'><AiFillLinkedin className='hover:scale-110 duration-300 mt-5'/></a>
