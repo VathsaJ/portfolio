@@ -24,7 +24,7 @@ export default function Home() {
         <section className='min-h-screen '>
 
           <nav className='p-6 mb-12 flex justify-between shadow-xl rounded-xl'>
-            <h1 className='text-2xl font-bold'>VATHSA</h1>
+            <h1 className='text-2xl font-bold'>SHRIVATHSA</h1>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill className='cursor-pointer text-2xl hover:scale-110 duration-300' onClick={() => setDarkMode(!darkMode)}/></li>
             </ul>
