@@ -38,7 +38,7 @@ export default function Home() {
             <h2 className='text-4xl py-2 text-teal-600 font-medium md:text-7xl mt-10 hover:scale-110 duration-300'>Shrivathsa Joisa</h2>
             <h3 className='text-2xl py-2 font-medium md:text-3xl'>Software Developer</h3>
             <p className='text-md py-5 leading-8 font-semibold max-w-4xl mx-auto'>
-              Hii.. Im Vathsa ..
+              Hii.. Im Shrivathsa ..
               I'm a software developer based in Bangalore, India, specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
             </p>
             <p className='text-md font-semibold text-cyan-800'>Please scroll down to know more..</p>
@@ -48,8 +48,8 @@ export default function Home() {
           <div className='flex justify-center gap-16 text-5xl py-3 text-greay-500 mt-5 mx-auto'>
             <a href='https://www.instagram.com/shrivathsa_joisa/'><AiFillInstagram className='hover:scale-110 duration-300 mt-5'/></a>
             <a href='https://www.facebook.com/shrivathsa.joisa'><AiFillFacebook className='hover:scale-110 duration-300  mt-5' /></a>
-            <a href='https://www.linkedin.com/in/vathsajoisa/'><AiFillLinkedin className='hover:scale-110 duration-300 mt-5'/></a>
-            <a href='https://github.com/VathsaJ'><FaGithub className='hover:scale-110 duration-300 mt-5'/></a>
+            <a href='https://www.linkedin.com/in/shrivathsajoisa/'><AiFillLinkedin className='hover:scale-110 duration-300 mt-5'/></a>
+            <a href='https://github.com/shrivathsaJoisa'><FaGithub className='hover:scale-110 duration-300 mt-5'/></a>
           </div>
 
         </section>
